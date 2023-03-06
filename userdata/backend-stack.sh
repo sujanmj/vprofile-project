@@ -49,4 +49,4 @@ echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config
 rabbitmqctl add_user test test
 rabbitmqctl set_user_tags test administrator
 systemctl restart rabbitmq-server
-
+##
