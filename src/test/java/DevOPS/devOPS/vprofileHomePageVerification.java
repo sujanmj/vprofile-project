@@ -25,7 +25,7 @@ public class vprofileHomePageVerification {
 		Thread.sleep(10000);
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    WebElement welcometitle = driver.findElement(By.className("user-name"));
-	    //driver.findElement(By.xpath("/html/body/div[1]/div/div[4]/div[1]/div/span[1]/h1/small"));	
+	    //driver.findElement(By.xpath("/html/body/div[2]/form/div/input[1]"));	
 	    
 	    System.out.println("Entered into Homepage   "+welcometitle.getText());
 	    
