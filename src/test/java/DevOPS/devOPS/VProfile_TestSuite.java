@@ -17,7 +17,8 @@ public class VProfile_TestSuite extends Variables {
 		
 		WebDriver driver = baseDriver.Chromedriver();
 		vprofileHomePagePO vpo = new vprofileHomePagePO(driver);
-		vpo.loginPage(Variables.URL);		 
+		vpo.loginPage(Variables.URL);
+		Thread.sleep(10 );		 
 		vpo.loginAction(Variables.UserName, Variables.Password);
 		driver.close();
 	    
@@ -31,6 +32,7 @@ public class VProfile_TestSuite extends Variables {
 		vprofileHomePagePO vpo = new vprofileHomePagePO(driver);
 		vpo.loginPage(Variables.URL);
 		//vpo.loginAction("admin_vp", "admin_vp");
+		Thread.sleep(10 );
 		vpo.loginAction(Variables.UserName, Variables.Password);
 		vprofileHomePageVerification vphome = new vprofileHomePageVerification(driver);
 		vphome.HomePageCheck();
